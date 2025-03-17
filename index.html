@@ -4,44 +4,195 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Atugatran/FontAwesome6Pro@main/css/all.min.css">
 </head>
 <body>
-<header>
-  <h1>My Portfolio</h1>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+<div class="flex-container">
+  <div class="side">
+    <div class="me_info">
+      <a href="https://github.com/Dilvir134" class="profile_photo" target="_blank"><img src="images/profile.jpg" alt="profile"></a>
+      <h3>Dilvir Singh</h3>
+      <div class="title"><p>Software Developer</p></div>
+      <hr>
+    </div>
+    <div class="contact">
+      <div class="email">
+        <div class="logo"><i class="fa-light fa-envelope"></i></div>
+        <div class="content"><p>Email</p><p>dilvir134@gmail.com</p></div>
+      </div>
+      <div class="phone">
+        <div class="logo"><i class="fa-light fa-phone"></i></div>
+        <div class="content"><p>Phone</p><p>+1 437-599-2474</p></div>
+      </div>
+      <div class="location">
+        <div class="logo"><i class="fa-light fa-location-dot"></i></div>
+        <div class="content"><p>Location</p><p>Toronto, ON</p></div>
+      </div>
+    </div>
+    <hr>
+    <ul class="social-list">
+
+      <li class="social-item">
+        <a href="https://www.linkedin.com/in/dilvir-singh-24a422253/" class="social-link">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+
+      <li class="social-item">
+        <a href="https://github.com/Dilvir134" class="social-link">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+
+      <li class="social-item">
+        <a href="mailto:dilvir134@gmail.com" class="social-link">
+          <i class="fa-light fa-envelope"></i>
+        </a>
+      </li>
+
     </ul>
-  </nav>
-</header>
-
-<section id="about">
-  <h2>About Me</h2>
-  <p>Hi, I'm a web developer passionate about creating amazing websites.</p>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="project">
-    <h3>Project 1</h3>
-    <p>Description of project 1.</p>
   </div>
-  <div class="project">
-    <h3>Project 2</h3>
-    <p>Description of project 2.</p>
+  <div class="main">
+    <header>
+      <h1 id="heading">About Me</h1>
+      <nav>
+        <ul>
+          <li><a id="about-link" href="#" class="active" onclick="changeToAbout(this.id)">About</a></li>
+          <li><a id="resume-link" href="#" onclick="changeToResume(this.id)">Resume</a></li>
+          <li><a id="extra-link" href="#" onclick="changeToExtra(this.id)">Extracurricular</a></li>
+          <li><a id="projects-link" href="#" onclick="changeToProjects(this.id)">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main-content">
+      <hr>
+      <p class="about-content">
+        "Technology is best when it brings people together." – Matt Mullenweg
+      </p>
+      <p class="about-content">
+        Software development is more than just writing code—it’s about building solutions that enhance efficiency, improve experiences, and connect people in meaningful ways. My passion for technology stems from a desire to create practical and impactful applications that simplify processes and solve real-world problems. Whether it's digitalizing financial records or developing intuitive web platforms, I strive to build software that adds tangible value.
+      </p>
+      <p class="about-content">
+        I see my role as both a creator and a problem-solver, constantly learning and adapting to new technologies. With expertise in full-stack development, automation, and AI, I aim to contribute to innovative projects that push the boundaries of what’s possible. My goal is to develop solutions that not only optimize systems but also empower businesses and individuals to work smarter and more effectively.
+      </p>
+
+      <section class="clients">
+
+        <h1>Skills</h1>
+
+        <ul class="clients-list has-scrollbar">
+
+          <li class="clients-item">
+            <a href="https://nodejs.org/en" target="_blank">
+              <figure class="clients-img">
+                <img src="images/node.png" alt="Tkinter">
+              </figure>
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="https://expressjs.com/" target="_blank">
+              <figure class="clients-img">
+                <img src="images/express.jpg" alt="Tkinter">
+              </figure>
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="https://react.dev/" target="_blank">
+              <figure class="clients-img">
+                <img src="images/react.png" alt="Tkinter">
+              </figure>
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="https://www.mongodb.com/" target="_blank">
+              <figure class="clients-img">
+                <img src="images/mongo.svg" alt="Tkinter">
+              </figure>
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="https://socket.io/" target="_blank">
+              <figure class="clients-img">
+                <img src="images/socket.png" alt="Socket IO">
+              </figure>
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="https://www.djangoproject.com/" target="_blank">
+              <figure class="clients-img">
+                <img src="images/django.jpg" alt="Django">
+              </figure>
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="https://spring.io/projects/spring-boot" target="_blank">
+              <figure class="clients-img">
+                <img src="images/spring.png" alt="Spring Boot">
+              </figure>
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="https://dotnet.microsoft.com/en-us/" target="_blank">
+              <figure class="clients-img">
+                <img src="images/dotnet.png" alt="Dot Net">
+              </figure>
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="https://developer.android.com/" target="_blank">
+              <figure class="clients-img">
+                <img src="images/android.jpg" alt="Xcode">
+              </figure>
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="https://developer.apple.com/xcode/" target="_blank">
+              <figure class="clients-img">
+                <img src="images/xcode.png" alt="Xcode">
+              </figure>
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="https://docs.python.org/3/library/tkinter.html" target="_blank">
+              <figure class="clients-img">
+                <img src="images/tkinter.png" alt="Tkinter">
+              </figure>
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="https://developers.google.com/apps-script" target="_blank">
+              <figure class="clients-img">
+                <img src="images/app-script.jpg" alt="Apps Script">
+              </figure>
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="https://www.gnu.org/software/bash/" target="_blank">
+              <figure class="clients-img">
+                <img src="images/bash.jpg" alt="Bash">
+              </figure>
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+    </div>
   </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: example@example.com</p>
-</section>
-
-<footer>
-  <p>&copy; 2025 My Portfolio</p>
-</footer>
+</div>
 </body>
+<script src="js/script.js"></script>
 </html>
