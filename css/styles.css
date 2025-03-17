@@ -1,26 +1,26 @@
-@media screen and (max-aspect-ratio: 19/9) {
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #111;
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        padding: 20px;
-    }
+/*@media screen and (max-aspect-ratio: 19/9) {*/
+/*    body {*/
+/*        display: flex;*/
+/*        justify-content: center;*/
+/*        align-items: center;*/
+/*        height: 100vh;*/
+/*        background-color: #111;*/
+/*        font-family: 'Poppins', sans-serif;*/
+/*        text-align: center;*/
+/*        padding: 20px;*/
+/*    }*/
 
-    body * {
-        display: none;
-    }
+/*    body * {*/
+/*        display: none;*/
+/*    }*/
 
-    body::before {
-        content: "🚧 Under Construction 🚧";
-        font-size: 2rem;
-        font-weight: bold;
-        color: white;
-    }
-}
+/*    body::before {*/
+/*        content: "🚧 Under Construction 🚧";*/
+/*        font-size: 2rem;*/
+/*        font-weight: bold;*/
+/*        color: white;*/
+/*    }*/
+/*}*/
 * {
     padding: 0;
     margin: 0;
